@@ -1,9 +1,9 @@
-Then("I shoudl see {string}") do |string|
-  pending # Write code here that turns the phrase above into concrete actions
+Then("I should see {string}") do |content|
+  expect(page).to have_content content
 end
 
 Given("I am on the {string} page") do |string|
-  pending # Write code here that turns the phrase above into concrete actions
+  visit users_path
 end
   
 When("I click the {string} button") do |string|

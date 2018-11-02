@@ -6,8 +6,8 @@ Feature: User can create an account
 
     Scenario: User can successfully sign up for a new account [happy path]
         Given I am on the 'landing' page 
-        Then I shoudl see "Welcome to your laundry-room"
-        When  I click the 'Sign-up' button
+        Then I should see "Welcome to your laundry-room"
+        When I click the 'Sign-up' button
         And I fill in 'Given name' with 'Peter'
         And I fill in 'Family name' with 'Andersson'
         And I fill in 'Email' with 'peter.andersson@mail.com'
