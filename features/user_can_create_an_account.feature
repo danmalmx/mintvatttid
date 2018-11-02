@@ -8,12 +8,13 @@ Feature: User can create an account
         Given I am on the 'landing' page 
         And I see "Welcome to your laundry-room"
         And I click the 'Sign-up' button
-        Then I should be on the 'Sign-up' page
+        Then I am on the 'Sign-up' page
+        And stop
         And I fill in 'Given name' with 'Peter'
         And I fill in 'Family name' with 'Andersson'
         And I fill in 'Email' with 'peter.andersson@mail.com'
         And I fill in 'Password' with 'password'
         And I fill in 'Password_authentication' with 'password'
         And I click the 'Submit' button
-        Then I should be on the 'landing' page 
+        Then I am on the 'landing' page 
         And I see 'Account successfully created'
