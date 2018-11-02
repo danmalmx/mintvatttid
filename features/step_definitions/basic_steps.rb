@@ -6,9 +6,10 @@ When("I click the {string} button") do |btn|
   click_button btn
 end
   
-When("I fill in {string} with {string}") do |string, string2|
-  pending # Write code here that turns the phrase above into concrete actions
+When("I fill in {string} with {string}") do |text, content|
+  fill_in text, with: content
 end
+
 
 Then("stop") do
   save_and_open_page
