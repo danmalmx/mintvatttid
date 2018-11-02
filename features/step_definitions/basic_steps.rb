@@ -10,7 +10,6 @@ When("I fill in {string} with {string}") do |text, content|
   fill_in text, with: content
 end
 
-
 Then("stop") do
   save_and_open_page
 end

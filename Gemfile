@@ -24,6 +24,7 @@ group :development, :test do
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
   gem 'launchy', '~> 2.4', '>= 2.4.3'
+  gem 'chromedriver-helper'
   gem 'selenium-webdriver'
 end
 

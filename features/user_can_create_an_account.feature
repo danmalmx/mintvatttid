@@ -1,4 +1,3 @@
-@javascript 
 Feature: User can create an account
 
     As an apartment owner
@@ -17,4 +16,4 @@ Feature: User can create an account
         And I fill in 'Password confirmation' with 'password'
         And I click the 'Sign up' button
         Then I am on the 'landing' page 
-        And I see 'Account successfully created'
+        And I see 'Welcome! You have signed up successfully.'
