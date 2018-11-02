@@ -6,13 +6,14 @@ Feature: User can create an account
 
     Scenario: User can successfully sign up for a new account [happy path]
         Given I am on the 'landing' page 
-        Then I should see "Welcome to your laundry-room"
-        When I click the 'Sign-up' button
+        And I see "Welcome to your laundry-room"
+        And I click the 'Sign-up' button
+        Then I should be on the 'Sign-up' page
         And I fill in 'Given name' with 'Peter'
         And I fill in 'Family name' with 'Andersson'
         And I fill in 'Email' with 'peter.andersson@mail.com'
         And I fill in 'Password' with 'password'
         And I fill in 'Password_authentication' with 'password'
         And I click the 'Submit' button
-        Then I should be on the root path 
-        And I should see 'Account successfully created'
+        Then I should be on the 'landing' page 
+        And I see 'Account successfully created'
