@@ -10,6 +10,10 @@ When("I fill in {string} with {string}") do |text, content|
   fill_in text, with: content
 end
 
-Then("stop") do
-  save_and_open_page
+Given("I am on the signup page") do
+  visit new_user_registration_path
+end
+
+Then("I should see {string}") do |string|
+  pending # Write code here that turns the phrase above into concrete actions
 end

@@ -16,4 +16,11 @@ Feature: User can create an account
         And I fill in 'Password confirmation' with 'password'
         And I click the 'Sign up' button
         Then I am on the 'landing' page 
-        And I see 'Welcome! You have signed up successfully.'
+        And I see the message 'Welcome! You have signed up successfully.'
+    
+    Scenario: 'User inputs invalid password [Sad path]'
+        Given I am on the signup page
+        And I fill in 'Email' with 'sad@path.com'
+        And I fill in 'Password' with 'drowssap'
+        And I click the 'Sign up' button
+        Then I see the message 'Invalid Email or password.'
