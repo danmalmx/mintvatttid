@@ -2,8 +2,8 @@ Given("I am on the {string} page") do |string|
   visit users_path
 end
   
-When("I click the {string} button") do |btn|
-  click_button btn
+When("I click {string}") do |btn_or_lnk|
+  click_on btn_or_lnk
 end
   
 When("I fill in {string} with {string}") do |text, content|
