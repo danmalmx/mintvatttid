@@ -1,9 +1,8 @@
-let loginForm = "<%= escape_javascript(render partial: 'signup') %>"
+let signupForm = "<%= escape_javascript(render partial: 'partials/signup') %>"
 let displayElement = document.getElementById('user-forms')
-displayElement.innerHTML = loginForm;
+displayElement.innerHTML = signupForm;
 
 let modal = document.getElementById('modal')
-let btn = document.getElementById('btn')
 window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = "none";

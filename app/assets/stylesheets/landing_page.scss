@@ -10,8 +10,7 @@
         rgba(0, 0, 0, 0.45), 
         rgba(0, 0, 0, 0.45)
       ),    
-      image_url("tvattstuga.jpg");
-      filter: grayscale(100%);
+      image_url("mintvatt.jpg");
     background-position: center center;
     background-size: cover;
   }
@@ -36,9 +35,8 @@
 
 .sign-up {
     font-size: 1.5rem;  
-    color: white;
     width: 8vw;
     margin: 50px auto;
     display: block;
     text-decoration: none;
-}  
+}
