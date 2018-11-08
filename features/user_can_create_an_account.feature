@@ -7,20 +7,20 @@ Feature: User can create an account
     Scenario: User can successfully sign up for a new account [happy path]
         Given I am on the 'landing' page 
         And I see "WELCOME TO YOUR LAUNDRY-ROOM"
-        And I click 'Sign-up'
+        And I click 'Sign up'
         Then I should visit the 'Sign-up' page
-        And I fill in 'Given name' with 'Peter'
-        And I fill in 'Family name' with 'Andersson'
-        And I fill in 'Email' with 'peter.andersson@mail.com'
+        And I fill in 'GIVEN NAME' with 'Peter'
+        And I fill in 'FAMILY NAME' with 'Andersson'
+        And I fill in 'EMAIL' with 'peter.andersson@mail.com'
         And I fill in 'Password' with 'password'
         And I fill in 'Password confirmation' with 'password'
-        And I click 'Create Account'
+        And I click 'CREATE ACCOUNT'
         Then I am on the 'landing' page 
-        And I see the message 'Welcome! You have signed up successfully.'
+        And I see 'Welcome! You have signed up successfully.'
     
     Scenario: 'User inputs invalid password [Sad path]'
         Given I am on the signup page
         And I fill in 'Email' with 'sad@path.com'
         And I fill in 'Password' with 'drowssap'
         And I click 'Create Account'
-        Then I see the message 'Invalid Email or password.'
+        Then I see 'Invalid Email or password.'

@@ -52,7 +52,7 @@ let colors = {
   'smoke-light': 'rgba(0, 0, 0, 0.4)',
   'smoke-lighter': 'rgba(0, 0, 0, 0.25)',
   'smoke-lightest': 'rgba(0, 0, 0, 0.1)',
-  'smoke-white': 'rgba(255, 255, 255, 0.9)',
+  'smoke-white': 'rgba(255, 255, 255, 0.7)',
 
   'transparent': 'transparent',
 
